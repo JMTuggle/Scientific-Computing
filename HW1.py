@@ -5,8 +5,9 @@ for j in range(100):
     f_der_xj = np.sin(3 * x[j]) + 3 * x[j] * np.cos(3 * x[j]) - np.exp(x[j])
     x_new = x[j] - f_xj / f_der_xj
     x = np.append(x, x_new)
-    fc=x[j]*np.sin(3*x[j])-np.exp(x[j])
+    fc=x[j+1]*np.sin(3*x[j+1])-np.exp(x[j+1])
     if abs(fc) < 1e-6:
+        display(j)
         break 
 x
 
