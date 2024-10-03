@@ -8,6 +8,7 @@ for j in range(100):
     fc=x[j]*np.sin(3*x[j])-np.exp(x[j])
     if abs(fc) < 1e-6:
         break 
+x
 
 xr = -0.4
 xl = -0.7
